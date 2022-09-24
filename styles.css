@@ -1,0 +1,288 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    text-align: center;
+    background-image: url(./images89.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 2%;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+h3{
+    float: left;
+    margin: 20px;
+    font-size: 40px;
+}
+#navbar span{
+    color: rgb(36, 36, 114);
+}
+figcaption:hover{
+    color: brown;
+}
+/* label i{
+    margin: 30px;
+} */
+label svg{
+    margin: 20px;
+}
+.menu{
+   
+     fill: rgb(36, 36, 114);
+}
+.menu:hover{
+    fill: white;
+}
+label i:hover{
+    color: rgb(36, 36, 114);
+}
+#navbar{
+    position: fixed;
+    z-index: 2;
+     background-color: brown;
+    width: 100vw;
+    height: 10vh;
+    top: 0;
+}
+h4{
+    font-size: 20px;
+    border-bottom: 3px solid;
+    width: 100%;
+    margin: 10px 2px;
+}
+.logo img{
+    width: 35%;
+    float: left;
+    margin: 100px 40px;
+    border-radius: 50% 20px;
+    transform: translateX(100%);
+    animation: img 12s linear infinite;
+     }
+     @keyframes img{
+         10%{
+             transform: translateY(0px);
+         }
+         100%{
+             transform: translateY(0px);
+         }
+     }
+
+.sidebar{
+    width: 20%;
+    background-color: rgb(36, 36, 114);
+    height: 100vh;
+    position: fixed;
+    z-index: 1;
+    transition: 0.5s;
+    transition-property: left;
+}
+.list{
+    text-align: left;
+}
+.list a{
+    display: block;
+   color: white;
+   text-decoration: none;
+   line-height: 50px;
+  width: 100%;
+  padding: 2px 30px;
+  height: 10vh;
+
+}
+.list a:hover{
+    width: 100%; 
+    border-radius: 5px;
+    background-color: brown;
+}
+.btn{
+    width: 85%;
+    text-align: right;
+    
+}
+
+.sign{
+    background-color: rgb(36, 36, 114);
+    padding: 10px 12px;
+    float: right;
+    margin: 0px 10px;
+    position: fixed;
+    top: 2%;
+    font-size: 17px;
+}
+.sign:hover{
+    background-color: rgb(32, 32, 228);  
+}
+#check:checked ~.sidebar{
+    left: -100px;
+   
+}
+.sidebar a span{
+    color: white;
+}
+#check:checked ~.sidebar a span{
+    display: none;
+}
+#check:checked ~.sidebar .logo{
+    display: none;
+}
+#check:checked ~.sidebar a{
+    font-size: 20px;
+    margin-left: 90px;
+    margin-top: 60px;
+    width: 100px;
+}
+#check:checked ~.sub-container{
+    margin-left: 90px;
+}
+.list a i{
+    margin: 10px;
+}
+#welcome-section{
+     height: 80vh;
+}
+.sub-container{
+     margin-left: 200px;
+   transition: 0.5s;
+}
+#welcome-section h1{
+ 
+   color: white;
+   font-size: 50px;
+  position: relative;
+  top: 45%;
+}
+#welcome-section span{
+    font-style: italic;
+    font-size: 30px;
+    font-weight: bold;
+    position: relative;
+    top: 50%;
+}
+#WORK{
+    background-color: rgb(36, 36, 114);
+    height: 200vh;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+    margin-bottom: 30px;
+}
+.grid img{
+    width: 100%;
+    height: 40vh;
+    border-radius: 5px;
+}
+figure{
+    border: 1px solid;
+    border-radius: 5px;
+    margin: 20px 20px;
+    background-color: rgb(29, 3, 54);
+}
+figcaption{
+    color: white;
+    padding: 20px 20px;
+}
+#profile-link {
+    margin-bottom: 5px;
+    margin-left: 10px;
+}
+.project-tile1{
+    background-color: rgb(29, 3, 54);
+    margin: 10px 343px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    width: 20%;
+}
+.project-tile1:hover{
+    background-color: brown;
+}
+#projects h1{
+  position: relative;
+  top: 25px;
+   color: white;
+   font-size: 40px; 
+   margin-top: 80px;
+}
+.divider1{
+    border: 1px solid white;
+    margin: 30px 150px;
+   
+}
+#CONTACT{
+    background-color: rgb(36, 36, 114);
+    /* background-color: rgb(20, 18, 18); */
+    color: white;
+    height: 100vh;
+}
+.divider{
+    border: 2px solid brown;
+    margin-top: 420px;
+}
+footer{
+    text-align: right;
+    margin: 30px 20px;
+    padding: 0px 20px;
+}
+span{
+    font-size: large;
+    color: brown;
+}
+
+.svg{
+    fill: white;
+    
+}
+#project svg{
+    width: 3%;
+    position: relative;
+   top: 3.5px;
+}
+#project a{
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    margin: 30px;
+}
+#project a:hover{
+   color: brown;
+}
+.social{
+   position: relative;
+   top: 25%;
+}
+.social h1{
+    color: white;
+    font-size: 40px; 
+}
+.social p{
+    margin-top: 15px;
+}
+#project{
+   position: relative;
+   top: 40%;
+   transform: translateY(100%);
+   animation: svg 22s linear infinite;
+}
+@keyframes svg{
+    10%{
+        transform: translateY(0px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+@media (max-width:1450px){
+    #project a{
+       flex-wrap: wrap;
+       flex-direction: column;
+       
+    } 
+}
